@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Music Player</h1>
+        <div id="oscilloscope">
+            <canvas class="channel" id="channel1"></canvas>
+            <canvas class="channe2" id="channel2"></canvas>
+        </div>
+        <div id="current-song"></div>
+        <audio id="audio"></audio>
+        <div class="progress-container">
+            <div class="progress-bar"></div>
+        </div>
+        <div class="time-container">
+            <div id="time-elapsed">00:00</div>
+            <div id="time-total">00:00</div>
+        </div>
+        <div id="controls">
+            <button id="prev">&#10096;&#10096;</button>
+            <button id="play">&#9658;</button>
+            <button id="next">&#10097;&#10097;</button>
+            <button id="mode">&#9843;</button>
+        </div>
+        <details id="list-songs">
+            <summary>Songs List</summary>
+            <ul id="playlist"></ul>
+        </details>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
